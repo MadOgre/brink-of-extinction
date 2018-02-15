@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/airship_turn_right_bank0021.png-5cf5f016b62be29ab7fb0b1a60c7c0ae.stex"
+
+[deps]
+
+source_file="res://sprites/Airship/Bank right/airship_turn_right_bank0021.png"
+source_md5="f3b868989d466c2028611b1dce6cd9a2"
+
+dest_files=[ "res://.import/airship_turn_right_bank0021.png-5cf5f016b62be29ab7fb0b1a60c7c0ae.stex" ]
+dest_md5="257d666ff2ccd1d3d797ece80148af7f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
