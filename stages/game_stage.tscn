@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/airship.tscn" type="PackedScene" id=1]
+
+[node name="game_stage" type="Node" index="0"]
+
+[node name="airship" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 383.054, 262.736 )
+gravity_scale = 0.0
+
+[node name="Sprite" parent="airship" index="0"]
+
+scale = Vector2( 0.2, 0.2 )
+_sections_unfolded = [ "Transform" ]
+
+
+[editable path="airship"]
