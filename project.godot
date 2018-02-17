@@ -16,6 +16,7 @@ run/main_scene="res://stages/game_stage.tscn"
 [display]
 
 window/size/width=800
+window/vsync/use_vsync=false
 
 [importer_defaults]
 

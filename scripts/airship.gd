@@ -8,7 +8,6 @@ func _ready():
 
 func _input(event):
 	if event.is_action_pressed("game_up"):
-		print("up pressed")
 		velocity.y -= SPEED
 	if event.is_action_pressed("game_down"):
 		velocity.y += SPEED
@@ -26,3 +25,4 @@ func _input(event):
 		velocity.x -= SPEED
 		
 	linear_velocity = velocity.normalized() * SPEED
+	pass
