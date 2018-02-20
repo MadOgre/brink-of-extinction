@@ -3,7 +3,7 @@
 [ext_resource path="res://scenes/walls.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/airship.tscn" type="PackedScene" id=2]
 
-[node name="game_stage" type="Node" index="0"]
+[node name="game_stage" type="Node"]
 
 [node name="walls" parent="." index="0" instance=ExtResource( 1 )]
 
