@@ -1,49 +1,37 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/airship.gd" type="Script" id=1]
 [ext_resource path="res://sprites/airship_idle_shadow_overhead0000.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
+[node name="airship" type="KinematicBody2D"]
 
-custom_solver_bias = 0.0
-extents = Vector2( 62.1572, 64.1786 )
-
-[node name="airship" type="RigidBody2D" index="0"]
-
+position = Vector2( -2.57749, 0.205878 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
-mode = 2
-mass = 1.0
-friction = 1.0
-bounce = 0.0
-gravity_scale = 0.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 0, 0 )
-linear_damp = 0.0
-angular_velocity = 0.0
-angular_damp = -1.0
+collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Linear" ]
+_sections_unfolded = [ "Linear", "Transform" ]
 __meta__ = {
 "_edit_group_": true
 }
 SPEED = 300
+SIDE_SPEED = 100
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
+[node name="airship_sprite" type="Sprite" parent="." index="0"]
 
+rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+[node name="airship_collision" type="CollisionPolygon2D" parent="." index="1"]
 
-position = Vector2( -0.387421, -0.581139 )
-shape = SubResource( 1 )
+position = Vector2( 1.06326, -0.613892 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+build_mode = 0
+polygon = PoolVector2Array( -7, -217.5, 2, -217.5, 7.5, -214, 27, -185.5, 28.5, -169, 18.5, -135, 34.5, -124, 39.5, -96, 65.5, -68, 86.5, -59, 99.5, -85, 114, -97.5, 136, -105.5, 157, -105.5, 176.5, -98, 192.5, -84, 202.5, -67, 205.5, -49, 202, -25.5, 193.5, -10, 176, 5.5, 156, 12.5, 135, 12.5, 115, 5.5, 99, -8.5, 88.5, -28, 87.5, -36, 68.5, -32, 71.5, -26, 62.5, 25, 57, 34.5, 55.5, 52, 41.5, 98, 38, 106.5, 26, 115.5, 22, 129.5, 8.5, 134, 8.5, 140, 21.5, 145, 39, 163.5, 44.5, 176, 44.5, 201, 30, 225.5, 4, 238.5, -11, 238.5, -28.5, 232, -39, 224.5, -51.5, 204, -53.5, 185, -50.5, 170, -38, 152.5, -15.5, 139, -15.5, 133, -30, 129.5, -33.5, 115, -47.5, 102, -61.5, 56, -62.5, 39, -69, 27.5, -78.5, -26, -75.5, -32, -94, -35.5, -104.5, -10, -122, 5.5, -142, 12.5, -163, 12.5, -183, 5.5, -199, -8.5, -209.5, -28, -212.5, -46, -208, -68.5, -199.5, -84, -183.5, -98, -164, -105.5, -140, -105.5, -121, -97.5, -105, -83.5, -94, -58.5, -73, -67.5, -46, -97.5, -40.5, -125, -25.5, -134, -34.5, -167, -34.5, -184, -16.5, -211, -8, -217.5 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 
