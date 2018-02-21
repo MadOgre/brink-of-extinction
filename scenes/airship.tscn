@@ -17,7 +17,7 @@ animations = [ {
 "speed": 30.0
 } ]
 
-[node name="airship" type="KinematicBody2D" index="0"]
+[node name="airship" type="KinematicBody2D"]
 
 position = Vector2( -2.57749, 0.205878 )
 input_pickable = false
@@ -38,7 +38,6 @@ rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 2
 playing = true
 _sections_unfolded = [ "Transform" ]
 

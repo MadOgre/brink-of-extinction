@@ -17,6 +17,7 @@ run/main_scene="res://stages/game_stage.tscn"
 
 window/size/width=800
 window/vsync/use_vsync=false
+mouse_cursor/custom_image="res://sprites/GUI/crosshair.png"
 
 [importer_defaults]
 
